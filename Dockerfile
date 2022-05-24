@@ -4,6 +4,7 @@ MAINTAINER Daniel Romero <infoslack@gmail.com>
 
 ENV VERSION 1.9
 
+#remove app dir and install wget & php5
 RUN rm -rf /app && \
     apt-get update && \
     apt-get install -y wget php5-gd && \
